@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div class="Img_usuario">
+                <img src="./img/img_user.png" alt="">
+            </div>
+            <div id="ola usuario">
+                <h3>
+                    Olá (nome do usuário)
+                </h3>
+            </div>
+            <div class="right-icons">
+                <button id="home"></button>
+                <i></i>
+                <button id="notifica"></button>
+                <i></i>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="hamburguer" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Camera</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Mesclagem</a></li>
+                    <li><a href="#">Pastas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="button-container">
+            <button class="rounded-button">Procure de acordo com o tempo</button>
+            <button class="rounded-button">Adquira sua peça</button>
+            <button class="rounded-button">Adicione peças de roupas</button>
+        </div>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
